@@ -1,0 +1,22 @@
+load pseudo code :
+// the following under assumption that dictionary is all of small letters and only a character '\'' extra to be allowed
+
+for every word's charcter
+    check if it's '\''
+                then save it at index #26
+        else it
+            shift the charcter by subtracting from 97;
+               // results in range (0 - 25)
+
+        check the value @ children
+
+            if NULL
+                malloc a new node and have children[i] points to it.
+                save it at the corresponding index in children array;
+
+            else
+                move to new node and continue
+
+        if @ end of word
+            set is_word to true
+
